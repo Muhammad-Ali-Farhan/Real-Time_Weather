@@ -1,6 +1,6 @@
 document.getElementById('getWeather').addEventListener('click', async () => {
     const city = document.getElementById('city').value;
-    const response = await fetch(`/weather?city=${city}`); // Fixed the URL format
+    const response = await fetch(`/weather?city=${city}`); 
     const resultDiv = document.getElementById('weatherResult');
 
     if (response.ok) {
